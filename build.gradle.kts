@@ -123,6 +123,8 @@ tasks {
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
         archiveBaseName.set(project.property("archive_base_name") as String)
         archiveVersion.set("$version")
+
+        from("LICENSE.txt")
     }
 
     jar {

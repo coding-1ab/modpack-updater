@@ -1,21 +1,16 @@
-modLoader = "kotlinforforge"
-loaderVersion = "[5.3,)"
-license = "GPL"
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
 
 [[mods]]
-modId = "modpack_tweaks"
-version = "1.0"
-displayName = "Coding Lab Modpack Tweaks"
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+description = "${description}"
+logoFile = "icon.png"
 #updateJSONURL=""
+credits = "NoEul"
 authors = "tmvkrpxl0"
-description = "Coding Lab Modpack Specific Tweaks"
 
-[[dependencies.modpack_tweaks]]
-modId = "neoforge"
-type = "required"
-versionRange = "[21.1.0-beta,)"
-ordering = "NONE"
-side = "BOTH"
-
-[[mixins]]
-config = "modpack_tweaks.mixins.json"
+[features.${mod_id}]
+javaVersion="[${java_version},)"
